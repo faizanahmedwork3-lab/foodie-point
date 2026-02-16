@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex between wrapper"> <a href="#" class="logo">Foodie <span
+                    class="logo-pointer-txt">Point</span></a> 
+            <ul class="navlist flex listgap">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="menu.html">Menu</a> </li>
+                <li> <a href="services.html">Services</a> </li>
+                <li> <a href="aboutus.html">About us</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+            <div class="cart-icon"> <a href="#"> <i class="fa-solid fa-bag-shopping"></i> <span
+                        class="cart-value">0</span> </a> <a href="#" class="signin-btn">Sign in <i
+                        class="fa-solid fa-arrow-right-from-bracket"></i></a> <a href="#" class="side-bar"><i
+                        class="fa-solid fa-bars"></i> </a> </div> 
+            <ul class="mobile-manu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-concierge-bell"></i> Services</a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us</a></li>
+                <li class="mobile-divider"></li>
+                <li class="mobile-dark-mode">
+                    <div class="mobile-toggle-container">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+                        <label class="mobile-switch">
+                            <input type="checkbox" id="mobileDarkModeToggle">
+                            <span class="mobile-slider"></span>
+                        </label>
+                    </div>
+                </li>
+
+                <li class="mobile-divider"></li>
+
+                <li>
+                    <a href="#" class="signin-btn-mobile">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign in
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <section>
+        <div class="our-services wrapper-2">
+            <h5>OUR SERVICES</h5>
+            <h2>How Does It Work?</h2>
+        </div>
+        <div class="features-cards">
+            <div class="easy-to-order-card"> <img src="easy-to-order.png" alt=""><br>
+                <h4>Easy To Order</h4>
+                <p>You only need a few steps in ordering food.</p>
+            </div>
+            <div class="fast-delivery-card"> <img src="fast-delivery.png" alt=""><br>
+                <h4>Fast Delivery</h4>
+                <p>Delivry that is always ontime even faster.</p>
+            </div>
+            <div class="best-quality-card"> <img src="best-quality.png" alt=""><br>
+                <h4>Best Quality Food</h4>
+                <p>Not only fast us in quality is also number one.</p>
+            </div>
+        </div> <br> <br> <br>
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-box">
+                    <h2>Foodie Point</h2>
+                    <p>
+                        Experience the taste of authentic cuisine with fresh ingredients
+                        and cozy ambiance. Come and enjoy our delightful dishes prepared with love!
+                    </p>
+                </div>
+
+                <div class="footer-box">
+                    <h2>Contact Us</h2>
+                    <p><strong>Address:</strong> 123 Food Street, Karachi</p>
+                    <p><strong>Phone:</strong> +92 300 1234567</p>
+                    <p><strong>Email:</strong> info@restaurant.com</p>
+                </div>
+
+                <div class="footer-box">
+                    <h2>Opening Hours</h2>
+                    <p>Monday-Friday: 10:00 AM - 10:00 PM</p>
+                    <p>Saturday-Sunday: 11:00 AM - 11:00 PM</p>
+                </div>
+
+                <div class="footer-box">
+                    <h2>Follow Us</h2>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Foodie Point. All Rights Reserved.</p>
+            </div>
+
+
+            <div id="authModal" class="auth-modal">
+                <div class="auth-modal-content">
+                    <span class="close-auth">&times;</span>
+
+                    <div class="auth-form" id="signInForm">
+                        <h2>Welcome Back!</h2>
+                        <p class="auth-subtitle">Sign in to your account</p>
+
+                        <form id="loginForm">
+                            <div class="input-group">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="input-group">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Password" required>
+                            </div>
+
+                            <div class="remember-forgot">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                                <a href="#" class="forgot-link">Forgot Password?</a>
+                            </div>
+
+                            <button type="submit" class="auth-submit-btn">Sign In</button>
+
+                            <div class="auth-divider">
+                                <span>OR</span>
+                            </div>
+
+                            <button type="button" class="google-btn">
+                                <i class="fa-brands fa-google"></i> Continue with Google
+                            </button>
+
+                            <p class="auth-switch">
+                                Don't have an account? <a href="#" id="showSignUp">Sign Up</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div class="auth-form" id="signUpForm" style="display: none;">
+                        <h2>Create Account</h2>
+                        <p class="auth-subtitle">Join us today!</p>
+
+                        <form id="registerForm">
+                            <div class="input-group">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+
+                            <div class="input-group">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="input-group">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+
+                            <div class="input-group">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Password" required>
+                            </div>
+
+                            <div class="input-group">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Confirm Password" required>
+                            </div>
+
+                            <label class="terms-checkbox">
+                                <input type="checkbox" required>
+                                I agree to the <a href="#">Terms & Conditions</a>
+                            </label>
+
+                            <button type="submit" class="auth-submit-btn">Sign Up</button>
+
+                            <div class="auth-divider">
+                                <span>OR</span>
+                            </div>
+
+                            <button type="button" class="google-btn">
+                                <i class="fa-brands fa-google"></i> Continue with Google
+                            </button>
+
+                            <p class="auth-switch">
+                                Already have an account? <a href="#" id="showSignIn">Sign In</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+</body>
